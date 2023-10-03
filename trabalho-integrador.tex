@@ -1,0 +1,121 @@
+\documentclass{article}
+
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{longtable} % Para tabelas longas
+
+\title{Trabalho Integrador}
+\author{Aline Morais}
+\date{Outubro de 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+O objetivo deste trabalho é integrar os conhecimentos adquiridos em três matérias: Banco de Dados 1, Engenharia de Software 1 e Programação 2. O projeto consiste na criação de um sistema para uma empresa real, aplicando os conceitos aprendidos em Engenharia de Software. No meu caso, estou cursando apenas Banco de Dados 1, mas os princípios das outras matérias serão aplicados no projeto.
+
+\section{Informações sobre a Empresa}
+Como base para este projeto, utilizaremos a empresa fictícia criada na matéria de Engenharia de Software 2. A empresa é dedicada ao resgate de animais, abrigando animais domésticos e silvestres.
+
+\section{Entrevista}
+Para definir os requisitos do sistema, conduzimos uma entrevista com os responsáveis pela empresa fictícia. Os principais requisitos identificados são:
+
+\begin{itemize}
+    \item Armazenar informações dos animais resgatados, incluindo espécie, idade e necessidades especiais.
+    \item Registrar informações dos biólogos, veterinários e funcionários associados aos animais sob seus cuidados.
+\end{itemize}
+
+\section{Problemas Encontrados pela Empresa}
+Um dos desafios enfrentados pela empresa é a transição do programa antigo para o novo sistema. Isso requer uma migração eficiente dos dados ea integração perfeita entre os dois sistemas.
+
+\section{Necessidades e Expectativas}
+O sistema a ser desenvolvido deve atender às seguintes necessidades e expectativas:
+
+\begin{itemize}
+    \item Registrar chamados de resgate de animais.
+    \item Cadastrar novos animais no sistema.
+    \item Cadastrar funcionários, incluindo biólogos e veterinários.
+    \item Consultar informações detalhadas sobre animais resgatados.
+    \item Consultar informações sobre funcionários.
+    \item Visualizar histórico de chamados de resgate.
+    \item Permitir a edição de perfis de funcionários.
+    \item Implementar um sistema de autenticação para efetuar login no sistema.
+\end{itemize}
+
+\section{Requisitos Funcionais}
+
+Aqui está a tabela de requisitos atualizada com mais detalhes nas descrições:
+
+\begin{longtable}{|l|l|l|p{0.5\linewidth}|}
+\caption{Requisitos Funcionais do Sistema (Parte 1)} \\
+\hline
+\textbf{ID} & \textbf{Requisito Funcional} & \textbf{Tipo de Usuário} & \textbf{Descrição do Requisito} \\
+\hline
+\endfirsthead
+\multicolumn{4}{c}{{\tablename\ \thetable{} -- Continuação da Página Anterior}} \\
+\hline
+\textbf{ID} & \textbf{Requisito Funcional} & \textbf{Tipo de Usuário} & \textbf{Descrição do Requisito} \\
+\hline
+\endhead
+\hline \multicolumn{4}{|r|}{{Continua na próxima página}} \\
+\hline
+\endfoot
+\hline
+\endlastfoot
+
+RF01 & Registrar chamados & Todos os usuários & Permite que os usuários registrem chamados de resgate de animais fornecendo informações de contato, localização, espécie do animal, idade e detalhes adicionais. O sistema deve registrar automaticamente a data do chamado. \\
+\hline
+RF02 & Implementar autenticação & Funcionários & Implementa autenticação de funcionários usando email e senha. Apenas funcionários têm acesso ao sistema após autenticação. \\
+\hline
+RF03 & Consultar chamados & Funcionários & Permite que os funcionários consultem o histórico de chamados de resgate, incluindo detalhes sobre a localização, espécie do animal, idade do animal e data do chamado. Os funcionários podem editar ou apagar chamados, se necessário. \\
+\hline
+RF04 & Editar perfil & Funcionários & Permite que os funcionários visualizem e atualizem suas informações pessoais, incluindo nome, email, senha, telefone, data de nascimento, função e especialidade. As alterações no perfil devem ser salvas para atualização. \\
+\end{longtable}
+
+\begin{longtable}{|l|l|l|p{0.5\linewidth}|}
+\caption{Requisitos Funcionais do Sistema (Parte 2)} \\
+\hline
+\textbf{ID} & \textbf{Requisito Funcional} & \textbf{Tipo de Usuário} & \textbf{Descrição do Requisito} \\
+\hline
+\endfirsthead
+\multicolumn{4}{c}{{\tablename\ \thetable{} -- Continuação da Página Anterior}} \\
+\hline
+\textbf{ID} & \textbf{Requisito Funcional} & \textbf{Tipo de Usuário} & \textbf{Descrição do Requisito} \\
+\hline
+\endhead
+\hline \multicolumn{4}{|r|}{{Continua na próxima página}} \\
+\hline
+\endfoot
+\hline
+\endlastfoot
+
+RF05 & Cadastrar funcionários & Administradores & Permite que os administradores do sistema cadastrem novos funcionários, incluindo informações como nome, email, telefone, idade, senha, especialidade e cargo. \\
+\hline
+RF06 & Cadastrar animais & Funcionários & Permite que os funcionários cadastrem informaçoes detalhadas sobre animais resgatados, incluindo nome/apelido, espécie, idade, funcionários responsáveis, local encontrado, data de resgate e observações. \\
+\hline
+RF07 & Consultar animais & Todos os usuários & Permite a consulta de informações detalhadas sobre animais resgatados, incluindo nome, espécie, idade, funcionários responsáveis, local de resgate, data de resgate, observações e informações de contato do local de destino após o resgate. \\
+\hline
+\end{longtable}
+
+\section{Requisitos Não Funcionais}
+
+Aqui estão os requisitos não funcionais:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|p{0.5\linewidth}|}
+\hline
+\textbf{ID} & \textbf{Requisito Não Funcional} & \textbf{Descrição} \\
+\hline
+RNF01 & Usabilidade & O sistema deve ser intuitivo, permitindo que qualquer usuário consiga utilizá-lo sem dificuldades. \\
+\hline
+RNF02 & Desenvolvimento & O programa deve ser desenvolvido utilizando o sistema de gerenciamento de banco de dados PostgreSQL. \\
+\hline
+RNF03 & Legal & O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD). \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
