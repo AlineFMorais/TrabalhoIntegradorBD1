@@ -4,4 +4,4 @@ Este é um projeto LaTeX para o trabalho integrador das disciplinas Banco de Dad
 
 ## Introdução
 
-O objetivo deste projeto é integrar os conhecimentos adquiridos em diferentes matérias e aplicá-los no desenvolvimento de um sistema real. Mesmo que você esteja cursando apenas uma das matérias, este projeto permitirá que você explore os princípios das outras disciplinas de maneira prática.
+O objetivo deste projeto é integrar os conhecimentos adquiridos em diferentes matérias e aplicá-los no desenvolvimento de um sistema real.
